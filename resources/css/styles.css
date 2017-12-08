@@ -1,0 +1,30 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 19, 2017, 8:26:08 PM
+    Author     : mguay22
+*/
+
+#timerDisplay {
+    -fx-font-size: 40px;
+    -fx-alignment: center;
+    -fx-halignment: center;
+    -fx-text-fill: white;
+}
+
+#onDeck {
+    -fx-font-size: 35px;
+    -fx-text-fill: white;
+}
+
+.root {
+    -fx-background-image: url("/images/bckg.jpg");
+    -fx-background-position: center;
+}
+
+BorderPane {
+    -fx-padding: 20;
+}

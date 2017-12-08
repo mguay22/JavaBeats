@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane stylesheets="/css/styles.css" id="GridPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FXMLDocumentController">
+    <top>
+        <VBox spacing="20" alignment="center">
+            <Label fx:id="onDeck">On Deck: Empty</Label>
+            <Button fx:id="clear" onAction="#clear">Clear</Button>
+        </VBox>
+    </top>
+    <center>
+        <VBox spacing="20" alignment="center">   
+            <HBox spacing="20" alignment="center">
+                <Button fx:id="buttonOne" onKeyPressed="#keyPress">1</Button>
+                <Button fx:id="buttonTwo" onKeyPressed="#keyPress">2</Button>
+                <Button fx:id="buttonThree" onKeyPressed="#keyPress">3</Button>
+                <Button fx:id="buttonFour" onKeyPressed="#keyPress">4</Button>
+                <Button fx:id="buttonFive" onKeyPressed="#keyPress">5</Button>
+                <Button fx:id="buttonSix" onKeyPressed="#keyPress">6</Button>
+                <Button fx:id="buttonSeven" onKeyPressed="#keyPress">7</Button>
+                <Button fx:id="buttonEight" onKeyPressed="#keyPress">8</Button>
+                <Button fx:id="buttonNine" onKeyPressed="#keyPress">9</Button>
+            </HBox>
+            <ChoiceBox fx:id="soundType" onAction="#changeSoundType" value="Percussion">
+                <String fx:value="Percussion"/>
+                <String fx:value="Funky"/>
+            </ChoiceBox>
+        </VBox>
+    </center>
+    <bottom>
+        <VBox spacing="20" alignment="center">
+            <Label fx:id="timerDisplay"></Label>
+            <HBox spacing="30" alignment="center">
+                <Button fx:id="timerStart" onAction="#record">Record</Button>
+                <Button fx:id="timerStop" onAction="#stop">Stop</Button>
+                <Button fx:id="playBack" onAction="#playBack">Play</Button>
+                <Button fx:id="open" onAction="#open">Open</Button>
+            </HBox>
+        </VBox>
+    </bottom>
+</BorderPane>
